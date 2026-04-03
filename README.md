@@ -39,9 +39,11 @@ This project was a collaborative effort by 3 members. We divided responsibilitie
    git clone [https://github.com/forManhW/Pomodoro-end-semester.git](https://github.com/forManhW/Pomodoro-end-semester.git)
 
 2. Install dependencies:
+   ```bash
     npm install
 
 3. Run in development mode:
+   ```bash
     npm run dev
 
 ---
