@@ -14,10 +14,10 @@ This project was a collaborative effort by 3 members. We divided responsibilitie
 * **Minh Anh (Me):**
     * **UI/UX Designer:** Designed the entire application interface on **Figma** based on project requirements.
     * **Frontend Developer:** Developed the **Pomodoro Timer** and **Task Management** pages.
-    * **Quality Assurance:** Acted as a lead **Tester** to ensure system stability and UI consistency.
+    * **Tester** 
 * **Khải:**
     * **Frontend Developer:** Developed the **Statistics** page for data visualization.
-    * **Tester:** Conducted functional testing and bug reporting.
+    * **Tester** 
 
 ---
 
