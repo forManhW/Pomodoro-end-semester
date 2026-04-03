@@ -1,0 +1,470 @@
+.settings-content-container {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.settings-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 140px;
+    border-right: 1px solid #FF7C7C;
+    padding-right: 12px;
+}
+
+.settings-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: background-color 0.15s;
+}
+
+.settings-menu-item img {
+    display: none;
+    width: 16px;
+    height: 16px;
+}
+
+.settings-menu-item:hover {
+    background-color: #ffc7c7;
+}
+
+.settings-menu-item.active-menu {
+    background-color: #FF7C7C;
+    color: #fff;
+    font-weight: 600;
+}
+
+.settings-menu-item.active-menu img {
+    display: block;
+}
+
+.settings-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.settings-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffd8d8;
+    font-size: 14px;
+    color: #333;
+}
+
+.settings-row-label-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.settings-row-label {
+    font-size: 14px;
+    color: #333;
+}
+
+.settings-row-description {
+    font-size: 11px;
+    color: #999;
+}
+
+.settings-number-input {
+    width: 70px;
+    padding: 4px 8px;
+    border: 1px solid #FF7C7C;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.settings-select {
+    padding: 4px 8px;
+    border: 1px solid #FF7C7C;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.settings-range {
+    width: 120px;
+    accent-color: #FF7C7C;
+}
+
+/* accounts */
+.settings-account-name {
+    color: #FF7C7C;
+}
+
+.settings-account-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.settings-account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ffd8d8;
+    font-size: 14px;
+    color: #333;
+}
+
+.settings-account-badge {
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FF7C7C;
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+
+.settings-account-switch-btn {
+    padding: 3px 12px;
+    border-radius: 6px;
+    border: 1px solid #FF7C7C;
+    background-color: #fff;
+    color: #FF7C7C;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.settings-account-switch-btn:hover {
+    background-color: #FF7C7C;
+    color: #fff;
+}
+
+.settings-account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid #ffd8d8;
+    margin-top: 4px;
+}
+
+.settings-account-input {
+    padding: 6px 10px;
+    border: 1px solid #FF7C7C;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    outline: none;
+}
+
+.settings-account-input:focus {
+    border-color: #e86060;
+}
+
+.settings-account-create-btn {
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #FF7C7C;
+    background-color: #FF7C7C;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.settings-account-create-btn:hover {
+    background-color: #e86060;
+    border-color: #e86060;
+}
+
+.settings-account-error {
+    font-size: 12px;
+    color: #e84040;
+    min-height: 16px;
+}
+
+/* api key */
+.settings-api-key-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.settings-api-key-input {
+    flex: 1;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.settings-api-key-toggle {
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #FF7C7C;
+    background-color: #fff;
+    color: #FF7C7C;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.15s;
+}
+
+.settings-api-key-toggle:hover {
+    background-color: #FF7C7C;
+    color: #fff;
+}
+
+/* upload sound */
+.settings-sound-select-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.settings-test-sound-btn {
+    padding: 4px 12px;
+    border-radius: 6px;
+    border: 1px solid #FF7C7C;
+    background-color: #fff;
+    color: #FF7C7C;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.settings-test-sound-btn:hover {
+    background-color: #FF7C7C;
+    color: #fff;
+}
+
+.settings-upload-sound-btn {
+    padding: 4px 12px;
+    border-radius: 6px;
+    border: 1px solid #FF7C7C;
+    background-color: #fff;
+    color: #FF7C7C;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.settings-upload-sound-btn:hover {
+    background-color: #FF7C7C;
+    color: #fff;
+}
+
+.settings-upload-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+}
+
+.settings-file-input {
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* password prompt */
+.settings-password-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: inherit;
+    z-index: 10;
+}
+
+.settings-password-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border: 2px solid #FF7C7C;
+    border-radius: 14px;
+    padding: 20px;
+    width: 260px;
+}
+
+.settings-password-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.settings-password-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.settings-dev-dump {
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #FF7C7C;
+    border-radius: 8px;
+    padding: 12px;
+    overflow: auto;
+    color: #333;
+}
+
+.settings-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid #FF7C7C;
+    margin-top: 8px;
+}
+
+.settings-actions button {
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: 1px solid #FF7C7C;
+    background-color: #fff;
+    color: #FF7C7C;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.settings-actions button:hover {
+    background-color: #FF7C7C;
+    color: #fff;
+}
+
+.settings-save-btn {
+    background-color: #FF7C7C !important;
+    color: #fff !important;
+}
+
+.settings-save-btn:hover {
+    background-color: #e86060 !important;
+}
+
+.settings-save-btn:disabled {
+    background-color: #a8a8a8 !important;
+    cursor: default;
+}
+
+.settings-mode-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffd8d8;
+}
+
+.settings-mode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.settings-mode-btn {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ffd8d8;
+    background: #fff;
+    cursor: pointer;
+    text-align: left;
+    transition: border-color 0.15s, background 0.15s;
+    width: 100%;
+}
+
+.settings-mode-dot {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: 2px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.settings-mode-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.settings-mode-text strong {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.15s;
+}
+
+.settings-mode-text span {
+    font-size: 11px;
+    color: #999;
+    line-height: 1.4;
+}
+
+.settings-mode-btn--active {
+    border-color: #FF7C7C;
+    background: #fff5f5;
+}
+
+.settings-mode-btn--active .settings-mode-dot {
+    border-color: #FF7C7C;
+    background: #FF7C7C;
+}
+
+.settings-mode-btn--active .settings-mode-text strong {
+    color: #FF7C7C;
+}
+
+.settings-custom-sound-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.settings-custom-sound-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ffd8d8;
+    font-size: 14px;
+    color: #333;
+}
+
+.settings-custom-sound-item .settings-account-switch-btn {
+    padding: 0;
+    border: none !important;
+    border-radius: 0;
+}
+
+.settings-custom-sound-item .settings-account-switch-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.settings-custom-sound-item .settings-account-switch-btn img {
+    width: 16px;
+    height: 16px;
+}

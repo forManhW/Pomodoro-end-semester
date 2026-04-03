@@ -1,0 +1,434 @@
+.all_statistic_page_container {
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    padding: 36px;
+}
+.general_tag {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+#today_total_time {
+    border: 1px solid #471515;
+    border-radius: 20px;
+    background-color: #FFE9E9;
+}
+#total_time_title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FF7C7C;
+    padding: 16px 23px 0px 23px;
+    font-family: 'Inter', sans-serif;
+}
+.general_title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #7F7F7F;
+    font-family: 'Inter', sans-serif;
+    padding: 16px 23px 0px 23px;
+}
+#process {
+    border: 1px solid #471515;
+    border-radius: 20px;
+}
+#process span {
+    color: #68A56E;
+    margin-left: 27px;
+}
+#current_task {
+    border: 1px solid #471515;
+    border-radius: 20px;
+}
+.value_display {
+    font-size: 30px;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+    color: #471515;
+    padding: 24px;
+}
+#today_total_time_value{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#statistic_heat_map_container {
+    border: 1px solid #471515;
+    border-radius: 20px;
+    padding: 23px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+#heatmap_scroll {
+    overflow-x: auto;
+}
+.contribute_chart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.contribute_chart p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #7F7F7F;
+    font-family: 'Inter', sans-serif;
+}
+.chart {
+    display: flex;
+    gap: 4px;
+    margin: 0px 10px;
+}
+.heat_color {
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+}
+
+.heatmap-tooltip {
+    position: fixed;
+    background: #1b1b1b;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    padding: 6px 10px;
+    border-radius: 6px;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 9999;
+}
+.heatmap-tooltip.visible {
+    opacity: 1;
+}
+#one {
+    background-color: #FFFBFB;
+}
+#two {
+    background-color: #FFF7D5;
+}
+#three {
+    background-color: #FFC2C2;
+}
+#four {
+    background-color: #FF7C7C;
+}
+#five {
+    background-color: #BF1919;
+}
+.calendar_and_chart {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+.calendar_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #342B25;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.calendar_and_chart hr {
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+#calendar_and_streak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 300;
+    color: #BF1919;
+}
+#calendar_and_streak h1 {
+    font-size: 20px;
+    font-weight: thin;
+    font-style: italic;
+    color: #FF7C7C;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#calendar_and_streak span {
+    display: flex;
+}
+
+#calendar_and_streak img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#day_in_week {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(7, 25px);
+    gap: 3px;
+    margin-bottom: 20px;
+}
+#day_in_month {
+    display: grid;
+    grid-template-columns: repeat(7, 25px);
+    grid-auto-rows: 25px;
+    align-content: start;
+    gap: 3px;
+    cursor: pointer;
+}
+#day_in_month span {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.chart_container {
+    border: 1px solid #471515;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.chart_wrapper {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    position: relative;
+    padding-bottom: 30px;
+}
+.efficient-chart {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+    margin-top: 8px;
+}
+.efficient-chart-title {
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+    color: #471515;
+    margin-bottom: 6px;
+}
+.efficient-chart-description {
+    font-size: 12px;
+    color: #7F7F7F;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+.efficient-legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.efficient-chart-canvas-wrap {
+    height: 200px;
+    position: relative;
+}
+.efficient-chart-empty {
+    font-style: italic;
+    color: #7F7F7F;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 0;
+}
+.bar-minutes {
+    font-size: 11px;
+    font-weight: 600;
+    color: #471515;
+    white-space: nowrap;
+}
+.chart_container h1 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 6px;
+}
+.chart-description {
+    font-size: 12px;
+    color: #7F7F7F;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+#bar_chart {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.bar_frame {
+    border: 1px solid #CCCCCC;
+    height: 40px;
+    width: 600px;
+    background-color: transparent;
+}
+#Y_Axis {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    left: 110px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 30px;
+}
+.line {
+    border-left: 1px dashed #E0E0E0;
+    position: relative;
+}
+
+.num {
+    position: absolute;
+    bottom: -25px;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+}
+.right_col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ── Low-height laptop ───────────────────────────────────────────────────── */
+
+@media screen and (max-height: 800px) and (min-width: 769px) {
+    .all_statistic_page_container {
+        padding: 20px;
+        margin: 12px;
+    }
+    .general_tag {
+        margin-bottom: 16px;
+    }
+    .value_display {
+        font-size: 22px;
+        padding: 14px;
+    }
+    #statistic_heat_map_container {
+        padding: 14px 16px;
+        margin-bottom: 16px;
+    }
+
+    .calendar_and_chart {
+        margin-bottom: 16px;
+    }
+    .calendar_container {
+        padding: 12px;
+    }
+    .chart_container h1 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+}
+
+/* ── Responsive Design ───────────────────────────────────────────────────── */
+
+@media screen and (max-width: 1200px) {
+    .calendar_and_chart {
+        flex-direction: column;
+    }
+    .chart_container {
+        gap: 24px;
+    }
+    .chart_wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .right_col {
+        min-height: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .general_tag {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .all_statistic_page_container {
+        margin: 10px;
+        padding: 16px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        margin-bottom: 80px; /* Prevents mobile nav from covering content */
+    }
+    
+    .value_display {
+        font-size: 22px;
+        padding: 16px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    #current_task_name {
+        font-size: 20px !important;
+        word-wrap: break-word;
+    }
+
+    /* Fix Tomatoes overflowing */
+    #current_progress_container > div > div {
+        gap: 4px !important;
+        justify-content: center !important;
+    }
+    #current_progress_container img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+
+
+    /* Fix Bar Chart overflowing */
+    .left_col {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #bar_chart {
+        width: 100%;
+        min-width: 0;
+    }
+    .bar {
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .bar_frame {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    
+    .chart_container h1 {
+        font-size: 20px;
+    }
+
+    .calendar_container {
+        padding: 15px 5px;
+    }
+}

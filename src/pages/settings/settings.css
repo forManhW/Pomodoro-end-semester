@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+    height: calc(100vh - var(--header-height) - 40px);
+}
+
+main .settings-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Mobile */
+@media only screen and (max-width: 500px) {
+    main .settings-content-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+        overflow: hidden;
+    }
+
+    .settings-menu {
+        flex-direction: row!important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: none !important;
+        padding: none !important;
+    }
+    
+    .settings-actions {
+        height: 100px;
+    }
+}
+
+

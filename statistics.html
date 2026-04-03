@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="/src/pages/statistics/statistics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="all_statistic_page_container">
+            <div class="general_tag">
+                <div id="today_total_time" class="general_tag_item highlighted_tag">
+                    <p class="general_title">Total focus time:</p>
+                    <h1 class="value_display" id="today_total_time_value">0 hours 0 minutes</h1>
+                </div>
+                <div id="process" class="general_tag_item">
+                    <p class="general_title">Current daily progress: <span id="progress_percentage">0%</span></p>
+                    <div class="value_display" id="current_progress_container"></div>
+                </div>
+                <div id="current_task" class="general_tag_item">
+                    <p class="general_title">Current task:</p>
+                    <h1 class="value_display" id="current_task_name"></h1>
+                </div>
+            </div>
+
+            <div id="statistic_heat_map_container">
+                <div id="heatmap_scroll">
+                    <svg id="heatmap_svg"></svg>
+                </div>
+                <div class="contribute_chart">
+                    <p>Less</p>
+                    <div class="chart">
+                        <div class="heat_color" style="background-color: #FFFBFB;"></div>
+                        <div class="heat_color" style="background-color: #FFF7D5;"></div>
+                        <div class="heat_color" style="background-color: #FFC2C2;"></div>
+                        <div class="heat_color" style="background-color: #FF7C7C;"></div>
+                        <div class="heat_color" style="background-color: #BF1919;"></div>
+                    </div>
+                    <p>More</p>
+                </div>
+            </div>
+
+            <div class="calendar_and_chart">
+                <div class="calendar_container">
+                    <h1 id="calendar_and_streak">
+                        Month YYYY
+                        <span>
+                            <img src="/src/assets/images/chevron_left.svg" id="go_back" alt="chevron-left">
+                            <img src="/src/assets/images/chevron_right.svg" id="go_forward" alt="chevron-right">
+                        </span>
+                    </h1>
+                    <hr>
+                    <div id="day_in_week">
+                        <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+                    </div>
+                    <div id="day_in_month"></div>
+                </div>
+                
+                <div class="chart_container">
+                    <div class="chart_wrapper">
+                        <div class="left_col">
+                            <h1>How did you spend your time?</h1>
+                            <p class="chart-description">Minutes of focused work completed <strong>today</strong>, grouped by time of day. The longest bar is scaled to 100% — hover for exact minutes.</p>
+                            <div id="bar_chart">
+                                <div class="bar">
+                                    <p class="timelable">6am - 12pm</p>
+                                    <div class="bar_frame"><div class="track"></div></div>
+                                </div>
+                                <div class="bar">
+                                    <p class="timelable">12pm - 6pm</p>
+                                    <div class="bar_frame"><div class="track"></div></div>
+                                </div>
+                                <div class="bar">
+                                    <p class="timelable">6pm - 12am</p>
+                                    <div class="bar_frame"><div class="track"></div></div>
+                                </div>
+                                <div class="bar">
+                                    <p class="timelable">12am - 6am</p>
+                                    <div class="bar_frame"><div class="track"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_col">
+                            <canvas id="myDonutCanvas"></canvas>
+                            <div id="task_label"></div>
+                        </div>
+                    </div>
+                    <div class="efficient-chart" id="efficient-chart">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="/src/shared/main.js"></script>
+    <script type="module" src="/src/pages/statistics/statistics.js"></script>
+</body>
+
+</html>
