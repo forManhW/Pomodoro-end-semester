@@ -29,8 +29,7 @@ This project was a collaborative effort by 3 members. We divided responsibilitie
 
 ### Tech Stack
 * **Design:** Figma
-* **Frontend:** HTML5, CSS3, JavaScript (ES6+), Vite
-* **Libraries:** Chart.js, Lucide Icons
+* **Frontend:** HTML5, CSS3, JavaScript, Vite
 
 ---
 
