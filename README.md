@@ -45,4 +45,4 @@ This project was a collaborative effort by 3 members. We divided responsibilitie
     npm run dev
 
 ---
-Developed as a student project at  CMC University.
+*Developed as a student group project at **CMC University**.*
